@@ -1,12 +1,38 @@
 import React from 'react'
 import { Text } from 'react-native'
 
-import { Container, HeadingText } from './styles'
+import {
+  List,
+  CategoryContainer,
+  CategoryImage,
+  CategoryName,
+  CategoryStatus,
+  RedCircle,
+  Info,
+} from './styles'
+import data from './data'
+
+type ItemProps = {
+  item: typeof data[0]
+}
 
 export function CategoryList() {
+  const CategoryItem: React.FC<ItemProps> = ({ item }) => (
+    <CategoryContainer>
+      <CategoryImage source={item.source} />
+      <CategoryName numberOfLines={1}>{item.name}</CategoryName>
+      <CategoryStatus>
+        <RedCircle />
+        <Info>51.9K</Info>
+      </CategoryStatus>
+    </CategoryContainer>
+  )
+
   return (
-    <Container>
-      <HeadingText></HeadingText>
-    </Container>
+    <List>
+      {data.map((item) => (
+        <CategoryItem key={item.name} item={item} />
+      ))}
+    </List>
   )
 }
