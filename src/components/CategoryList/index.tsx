@@ -1,5 +1,4 @@
 import React from 'react'
-import { Text } from 'react-native'
 
 import {
   List,
@@ -23,7 +22,7 @@ export function CategoryList() {
       <CategoryName numberOfLines={1}>{item.name}</CategoryName>
       <CategoryStatus>
         <RedCircle />
-        <Info>51.9K</Info>
+        <Info>{item.specs}</Info>
       </CategoryStatus>
     </CategoryContainer>
   )
