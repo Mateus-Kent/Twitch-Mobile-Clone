@@ -1,10 +1,12 @@
 import React from 'react'
-import { FlatList, View } from 'react-native'
+import { FlatList } from 'react-native'
 
 import { Header } from '../../components/Header'
 import { Heading } from '../../components/Heading'
 import { Title } from '../../components/Title'
 import { CategoryList } from '../../components/CategoryList'
+import { StreamList } from '../../components/StreamList'
+import { ChannelList } from '../../components/ChannelList'
 
 import { Wrapper, Container, Main } from './styles'
 
@@ -34,21 +36,21 @@ export function Following() {
         render: () => <Title>Live Channels</Title>,
         isTittle: true,
       },
-      { key: 'C2', render: () => <View /> },
+      { key: 'C2', render: () => <StreamList /> },
 
       {
         key: 'CONTINUE_WATCHING',
         render: () => <Title>Continue Watching</Title>,
         isTittle: true,
       },
-      { key: 'C3', render: () => <View /> },
+      { key: 'C3', render: () => <StreamList /> },
 
       {
         key: 'OFFLINE_CHANNELS',
         render: () => <Title>Offline Channels</Title>,
         isTittle: true,
       },
-      { key: 'C4', render: () => <View /> },
+      { key: 'C4', render: () => <ChannelList /> },
     ]
 
     const indices: number[] = []
