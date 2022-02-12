@@ -1,5 +1,4 @@
 import React from 'react'
-import { Text } from 'react-native'
 
 import streamThumbnail from '../../assets/stream_thumbnail.jpg'
 import StreamPreview from '../../assets/streamPreview.jpg'
