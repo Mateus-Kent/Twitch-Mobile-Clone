@@ -73,24 +73,8 @@ export function TabRoutes() {
         options={{
           tabBarIcon: ({ focused, size }) => {
             return (
-              <Ionicons
-                name="md-browsers"
-                size={size}
-                color={focused ? colors.purple : colors.black}
-              />
-            )
-          },
-        }}
-      />
-
-      <Screen
-        name="Esports"
-        component={ComingSoon}
-        options={{
-          tabBarIcon: ({ focused, size }) => {
-            return (
               <MaterialCommunityIcons
-                name="trophy-outline"
+                name="content-copy"
                 size={size}
                 color={focused ? colors.purple : colors.black}
               />
