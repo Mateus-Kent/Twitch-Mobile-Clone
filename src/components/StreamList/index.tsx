@@ -28,14 +28,14 @@ export function StreamList() {
         <StreamColumn>
           <StreamHeader>
             <StreamAvatar />
-            <StreamUsername numberOfLines={1}>mateus_quent</StreamUsername>
+            <StreamUsername numberOfLines={1}>YoDa</StreamUsername>
           </StreamHeader>
 
           <StreamDescription numberOfLines={1}>
             Grindando no Lost Ark
           </StreamDescription>
 
-          <StreamCategory numberOfLines={1}>Lost Ark</StreamCategory>
+          <StreamCategory numberOfLines={1}>LOST ARK</StreamCategory>
         </StreamColumn>
 
         <TagRow>
