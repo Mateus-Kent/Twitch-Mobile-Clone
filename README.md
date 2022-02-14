@@ -6,7 +6,7 @@
 
 ## 💻 Preview
 
-<img id="preview" src="./.github/TwitchPreview.jpg" >
+<img id="preview" src="./.github/TwitchMobilePreview.jpg" >
 
 ## 👨‍💻 This project was developed with the following technologies:
 
